@@ -5,7 +5,7 @@ from nltk.tokenize import word_tokenize
 import string
 import numpy as np
 
-# Descargar recursos de NLTK
+# Descargar recursos de NLTK - Tokenizer y Corpus
 nltk.download('punkt')
 nltk.download('stopwords')
 
@@ -51,6 +51,7 @@ X_tfidf = tfidf_vectorizer.fit_transform(processed_texts)
 # Mostrar el resultado de TF-IDF
 print("TF-IDF (Bag of Words) Representation:\n", X_tfidf.toarray())
 print("Feature Names:\n", tfidf_vectorizer.get_feature_names_out(), "\n")
+
 
 # Paso 5: Cálculo de Frecuencias y Valores TF-IDF
 
